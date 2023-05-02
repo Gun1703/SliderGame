@@ -30,7 +30,7 @@ struct ContentView: View {
             .alert(isPresented: $showAlert, content: {
                 .init(title: Text("Ваш результат:"),
                       message: Text("\(computeScore())"),
-                      dismissButton: .cancel()
+                      dismissButton: .default(Text("OK"))
                 )
             })
             .padding(.bottom, 55)
